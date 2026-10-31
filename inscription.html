@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr-CH" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questionnaire & pré-inscription — LAVAUX Academy</title>
+<meta name="description" content="Donnez votre avis sur LAVAUX Academy à Cully et pré-inscrivez-vous gratuitement et rejoignez le club des 100 fondateurs.">
+<meta name="theme-color" content="#0E1B3D">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .ins-wrap{display:grid;grid-template-columns:360px 1fr;gap:40px;align-items:start}
+  .ins-side{position:sticky;top:100px}
+  .ins-wrap>*{min-width:0}
+  @media (max-width:960px){.ins-wrap{grid-template-columns:1fr}.ins-side{position:static}}
+</style>
+</head>
+<body data-page="inscription">
+<header id="site-header"></header>
+<main>
+  <section class="section dark tight" style="padding-bottom:40px">
+    <div class="container">
+      <span class="eyebrow">Enquête de faisabilité et d’intérêt · 2 minutes</span>
+      <h1 style="font-size:clamp(36px,5.5vw,64px)">Votre avis <span class="accent">décide</span> de l’ouverture.</h1>
+      <p class="lead">LAVAUX Academy est un projet à l’étude. Dites-nous s’il vous intéresse, pour qui, quand et à quel prix. Pré-inscription gratuite et sans engagement.</p>
+    </div>
+  </section>
+
+  <section class="section cream" style="padding-top:50px">
+    <div class="container ins-wrap">
+      <aside class="ins-side">
+        <div class="photo sq" style="margin-bottom:22px"><img src="https://images.unsplash.com/photo-1671856129089-18737be2cd6c?auto=format&fit=crop&w=700&q=70" alt="Une pratiquante ajuste ses bandes avant l’entraînement"></div>
+        <div class="card">
+          <h3>Le club des 100 fondateurs</h3><p class="small">Si l’académie ouvre, les 100 premiers pré-inscrits qui s’abonnent reçoivent :</p>
+          <ul class="checks pink mb-0">
+            <li><b>Leurs gants</b> aux couleurs du club</li>
+            <li><b>Un prix bloqué</b> tant qu’ils restent membres</li>
+            <li><b>Zéro frais</b> d’inscription</li>
+            <li><b>La soirée d’ouverture</b> privée</li>
+          </ul>
+        </div>
+        <p class="small mt-1">Vos réponses servent uniquement à ce projet. Aucune donnée n’est vendue ni transmise. <a href="confidentialite.html">Confidentialité</a></p>
+      </aside>
+
+      <form class="form-shell" data-form="interet" novalidate>
+        <div class="form-progress"><i></i><i></i><i></i></div>
+
+        <!-- ÉTAPE 1 -->
+        <div class="fstep">
+          <h3>Seriez-vous preneur ?</h3>
+          <p class="hint">Si une académie de Muay Thaï ouvrait à Cully, comme décrite sur ce site…</p>
+          <div class="field">
+            <div class="choices big" data-need-one>
+              <label class="choice"><input type="radio" name="interet" value="oui" data-branch-source data-branch="yes" required><span>Oui, je m’inscrirais<small>dès l’ouverture</small></span></label>
+              <label class="choice"><input type="radio" name="interet" value="interesse" data-branch-source data-branch="yes"><span>Intéressé·e<small>j’aimerais en savoir plus</small></span></label>
+              <label class="choice"><input type="radio" name="interet" value="peut-etre" data-branch-source data-branch="yes"><span>Peut-être<small>selon les horaires et le prix</small></span></label>
+              <label class="choice"><input type="radio" name="interet" value="non" data-branch-source data-branch="no"><span>Pas pour moi<small>mais je dis pourquoi</small></span></label>
+            </div>
+          </div>
+          <div data-show-if="yes">
+            <div class="field">
+              <span class="lbl">Pour qui ? <span class="opt">(plusieurs choix possibles)</span></span>
+              <div class="choices" data-need-one>
+                <label class="choice"><input type="checkbox" name="pour_qui" value="Moi"><span>Moi</span></label>
+                <label class="choice"><input type="checkbox" name="pour_qui" value="Mon / mes enfant(s)"><span>Mon / mes enfant(s)</span></label>
+                <label class="choice"><input type="checkbox" name="pour_qui" value="Mon / ma conjoint·e"><span>Mon / ma conjoint·e</span></label>
+                <label class="choice"><input type="checkbox" name="pour_qui" value="Une amie / un ami"><span>Un·e ami·e</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="commune">Commune de résidence</label>
+              <input id="commune" class="input" name="commune" list="communes" autocomplete="address-level2" data-req placeholder="Cully, Lutry, Puidoux…">
+              <datalist id="communes"><option>Bourg-en-Lavaux (Cully, Grandvaux, Villette, Riex, Epesses)</option><option>Lutry</option><option>Pully</option><option>Belmont-sur-Lausanne</option><option>Puidoux</option><option>Chexbres</option><option>Savigny</option><option>Forel (Lavaux)</option><option>Oron</option><option>Lausanne</option><option>Vevey</option></datalist>
+            </div>
+          </div>
+          <div data-show-if="no">
+            <div class="field">
+              <span class="lbl">Qu’est-ce qui vous retient ? <span class="opt">(facultatif)</span></span>
+              <div class="choices">
+                <label class="choice"><input type="checkbox" name="frein" value="Pas intéressé par les sports de combat"><span>Les sports de combat, ce n’est pas pour moi</span></label>
+                <label class="choice"><input type="checkbox" name="frein" value="Prix"><span>Le prix</span></label>
+                <label class="choice"><input type="checkbox" name="frein" value="Horaires"><span>Les horaires</span></label>
+                <label class="choice"><input type="checkbox" name="frein" value="Distance"><span>La distance</span></label>
+                <label class="choice"><input type="checkbox" name="frein" value="Déjà inscrit ailleurs"><span>Je pratique déjà ailleurs</span></label>
+                <label class="choice"><input type="checkbox" name="frein" value="Peur des coups"><span>La peur des coups</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ÉTAPE 2 -->
+        <div class="fstep">
+          <div data-show-if="yes">
+            <h3>Vos envies</h3>
+            <p class="hint">Pour construire un planning et des tarifs qui vous conviennent vraiment.</p>
+            <div class="field">
+              <span class="lbl">Quels cours vous intéressent ?</span>
+              <div class="choices" data-need-one>
+                <label class="choice"><input type="checkbox" name="cours" value="Mini 4–6 ans"><span>Mini 4–6 ans</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Kids 7–9 ans"><span>Kids 7–9 ans</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Juniors 10–13 ans"><span>Juniors 10–13 ans</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Ados 14–17 ans"><span>Ados 14–17 ans</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Initiation adultes"><span>Initiation adultes</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Muay Thaï tous niveaux"><span>Muay Thaï tous niveaux</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Elles"><span>Elles (cours femmes)</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Avancés & sparring"><span>Avancés & sparring</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Boxe fitness"><span>Boxe fitness / prépa</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Coaching privé"><span>Coaching privé</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Boxe anglaise"><span>Boxe anglaise</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Kickboxing"><span>Kickboxing</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Self-défense"><span>Self-défense</span></label>
+                <label class="choice"><input type="checkbox" name="cours" value="Autre art martial"><span>Autre art martial</span></label>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="niveau">Niveau actuel (adulte)</label>
+                <select id="niveau" class="input" name="niveau"><option value="">—</option><option>Jamais pratiqué</option><option>Débutant·e (moins d’1 an)</option><option>Intermédiaire</option><option>Confirmé·e / compétiteur·trice</option></select></div>
+              <div class="field"><label for="frequence">Fréquence réaliste</label>
+                <select id="frequence" class="input" name="frequence" data-req><option value="">—</option><option>1 fois par semaine</option><option>2 fois par semaine</option><option>3 fois ou plus</option></select></div>
+            </div>
+            <div class="field">
+              <span class="lbl">Créneaux qui vous arrangent</span>
+              <div class="choices" data-need-one>
+                <label class="choice"><input type="checkbox" name="creneau" value="Mercredi après-midi"><span>Mercredi après-midi</span></label>
+                <label class="choice"><input type="checkbox" name="creneau" value="Après l’école 17h–18h"><span>Après l’école<small>17 h – 18 h</small></span></label>
+                <label class="choice"><input type="checkbox" name="creneau" value="Début de soirée 18h–19h30"><span>Début de soirée<small>18 h – 19 h 30</small></span></label>
+                <label class="choice"><input type="checkbox" name="creneau" value="Soirée 19h30–21h"><span>Soirée<small>19 h 30 – 21 h</small></span></label>
+                <label class="choice"><input type="checkbox" name="creneau" value="Midi"><span>Pause de midi</span></label>
+                <label class="choice"><input type="checkbox" name="creneau" value="Samedi matin"><span>Samedi matin</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="lbl">Une formule vous attire ? <span class="opt">(facultatif)</span></span>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="pack" value="famille"><span>Tarif famille<small>parents + enfants, plafond CHF 289</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="adulte"><span>Adulte<small>CHF 119 / mois</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="jeune"><span>Jeune adulte<small>CHF 89 / mois</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="enfant"><span>Enfant & ado seul<small>CHF 69 / mois</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="binome"><span>À deux<small>CHF 107 / pers.</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="starter"><span>Starter 4 semaines<small>CHF 49</small></span></label>
+                <label class="choice"><input type="radio" name="pack" value="carte"><span>Carte 10 cours<small>CHF 250, sans engagement</small></span></label>
+              </div>
+              <input type="hidden" name="composition_famille" value="">
+            </div>
+            <div class="field"><label for="budget">Budget mensuel acceptable pour le foyer</label>
+              <select id="budget" class="input" name="budget" data-req><option value="">—</option><option>Moins de CHF 80</option><option>CHF 80 – 120</option><option>CHF 120 – 150</option><option>CHF 150 – 250</option><option>Plus de CHF 250</option></select></div>
+            <div class="field">
+              <span class="lbl">Quelle durée d’abonnement vous conviendrait ?</span>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="duree" value="12 mois"><span>12 mois<small>le meilleur prix</small></span></label>
+                <label class="choice"><input type="radio" name="duree" value="6 mois"><span>6 mois<small>un peu plus cher</small></span></label>
+                <label class="choice"><input type="radio" name="duree" value="Sans engagement"><span>Sans engagement<small>carte de cours</small></span></label>
+              </div>
+            </div>
+            <div class="field"><label for="freins">Qu’est-ce qui pourrait vous faire hésiter ? <span class="opt">(facultatif)</span></label><textarea id="freins" class="input" name="hesitations" placeholder="Horaires, prix, niveau, peur des coups, distance…"></textarea></div>
+          </div>
+          <div data-show-if="no">
+            <h3>Un dernier mot ?</h3>
+            <p class="hint">Qu’est-ce qui vous ferait changer d’avis ?</p>
+            <div class="field"><textarea class="input" name="changer_avis" placeholder="Autre discipline, autre horaire, autre prix…"></textarea></div>
+          </div>
+        </div>
+
+        <!-- ÉTAPE 3 -->
+        <div class="fstep">
+          <div data-show-if="yes">
+            <h3>Votre pré-inscription</h3>
+            <p class="hint">Gratuite et sans engagement. Nous vous écrirons uniquement au sujet de l’académie.</p>
+            <div class="row2">
+              <div class="field"><label for="prenom">Prénom</label><input id="prenom" class="input" name="prenom" autocomplete="given-name" data-req></div>
+              <div class="field"><label for="nom">Nom <span class="opt">(facultatif)</span></label><input id="nom" class="input" name="nom" autocomplete="family-name"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="email">E-mail</label><input id="email" class="input" type="email" name="email" autocomplete="email" data-req></div>
+              <div class="field"><label for="tel">Téléphone <span class="opt">(facultatif)</span></label><input id="tel" class="input" type="tel" name="telephone" autocomplete="tel"></div>
+            </div>
+            <div class="field"><label for="enfants">Âge du / des enfant(s) <span class="opt">(si concerné)</span></label><input id="enfants" class="input" name="ages_enfants" placeholder="ex. 6 et 11 ans"></div>
+            <label class="consent"><input type="checkbox" name="preinscription" value="oui" checked> <span><b>Je me pré-inscris</b> comme membre fondateur et souhaite réserver mon cours d’essai offert (sans engagement).</span></label>
+            <label class="consent"><input type="checkbox" name="entretien" value="oui"> <span>J’accepte d’être contacté·e pour un court échange de 10 minutes afin d’affiner le projet.</span></label>
+            <label class="consent"><input type="checkbox" name="consentement" value="oui" data-req> <span>J’accepte que mes réponses soient utilisées pour ce projet, conformément à la <a href="confidentialite.html" target="_blank">politique de confidentialité</a>. Suppression sur simple demande.</span></label>
+          </div>
+          <div data-show-if="no">
+            <h3>Merci pour votre honnêteté</h3>
+            <p class="hint">Votre réponse compte autant que les autres. Voulez-vous être informé·e si l’offre évolue ?</p>
+            <div class="field"><label for="email2">E-mail <span class="opt">(facultatif)</span></label><input id="email2" class="input" type="email" name="email_info" autocomplete="email"></div>
+          </div>
+        </div>
+
+        <div class="form-msg" role="alert"></div>
+        <div class="form-nav">
+          <button class="btn btn-ghost" data-prev style="color:var(--navy)">← Retour</button>
+          <span style="display:flex;gap:10px;margin-left:auto">
+            <button class="btn btn-pink" data-next>Continuer →</button>
+            <button class="btn btn-pink" type="submit">Envoyer →</button>
+          </span>
+        </div>
+        <div class="form-done" hidden><h3>Bienvenue dans l’aventure !</h3><p>Votre pré-inscription est enregistrée. Vous serez parmi les premiers informés de l’ouverture et de votre cours d’essai offert.</p><p class="small">Parlez-en autour de vous : chaque réponse compte pour l’ouverture.</p><div class="btn-row mt-1" style="justify-content:center"><a class="btn btn-navy" href="index.html">Retour à l’accueil</a><a class="btn btn-ghost" style="color:var(--navy)" href="investir.html">Soutenir le projet</a></div></div>
+        <div class="form-done form-done-no" hidden><h3>Merci !</h3><p>Votre réponse nous aide à construire une offre adaptée au Lavaux.</p><a class="btn btn-navy mt-1" href="index.html">Retour à l’accueil</a></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

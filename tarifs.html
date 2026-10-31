@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr-CH" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarifs & famille — LAVAUX Academy</title>
+<meta name="description" content="Une formule simple : 2 cours par semaine et le samedi en accès libre. Remises famille automatiques et plafond de CHF 289 par mois pour tout le foyer. Calculez votre tarif.">
+<meta name="theme-color" content="#0E1B3D">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="tarifs">
+<header id="site-header"></header>
+<main>
+  <section class="hero page-hero">
+    <div class="hero-media"><img src="https://images.unsplash.com/photo-1612179736716-d643f0bdcf4e?auto=format&fit=crop&w=1400&q=65" alt="Gants de boxe suspendus au vestiaire" fetchpriority="high"></div>
+    <div class="container">
+      <span class="eyebrow">Tarifs</span>
+      <h1><span class="line">Une formule.</span><span class="line stroke">Toute</span><span class="line accent">la famille.</span></h1>
+      <p class="lead">2 cours par semaine et le samedi en accès libre, pour chaque membre. Plus vous êtes nombreux, moins vous payez : jamais plus de CHF 289 par mois pour tout le foyer.</p>
+    </div>
+  </section>
+
+  <!-- LA FORMULE -->
+  <section class="section" id="formule">
+    <div class="container">
+      <div class="note p" style="max-width:860px;margin-bottom:36px"><b>Tarifs indicatifs.</b> Ils servent à mesurer l’intérêt pendant l’enquête et seront confirmés si l’académie ouvre.</div>
+      <span class="eyebrow">La formule</span>
+      <h2>Ce qui est compris, pour chacun.</h2>
+      <div class="grid g3 mt-2">
+        <div class="card reveal"><span class="num">EN SEMAINE</span><h3>2 cours par semaine</h3><p>Dans le groupe de votre âge et de votre niveau : lundi et jeudi pour les adultes, deux jours fixes pour chaque groupe d’enfants.</p></div>
+        <div class="card reveal"><span class="num">LE SAMEDI</span><h3>Samedi Open, en accès libre</h3><p>De 9 h 30 à 12 h : sacs, paos, technique libre et sparring encadré pour les confirmés. Un coach est présent. Le dojo est ouvert aux enfants de 9 h 30 à 10 h 30.</p></div>
+        <div class="card reveal"><span class="num">INCLUS</span><h3>Le reste aussi</h3><p>Vestiaires et douches, passages de grade, prêt de gants et de protège-tibias le premier mois.</p></div>
+      </div>
+
+      <div class="pricing four mt-3" id="prix">
+        <div class="plan"><span class="who">Dès 18 ans</span><h3>Adulte</h3><div class="price"><b>119</b><span>CHF / mois</span></div><div class="price-note">sur 12 mois · ou CHF 137 sur 6 mois</div></div>
+        <div class="plan"><span class="who">Étudiant·e, apprenti·e, &lt; 25 ans</span><h3>Jeune adulte</h3><div class="price"><b>89</b><span>CHF / mois</span></div><div class="price-note">sur 12 mois · ou CHF 99 sur 6 mois</div></div>
+        <div class="plan"><span class="who">7 – 17 ans</span><h3>Enfant & ado</h3><div class="price"><b>69</b><span>CHF / mois</span></div><div class="price-note">année scolaire, 10 mois · ou CHF 79 au semestre</div></div>
+        <div class="plan"><span class="who">4 – 6 ans · 1 cours / semaine</span><h3>Mini</h3><div class="price"><b>49</b><span>CHF / mois</span></div><div class="price-note">année scolaire · ou CHF 56 au semestre</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATEUR -->
+  <section class="section dark" id="famille">
+    <div class="container">
+      <div class="split" style="align-items:start">
+        <div>
+          <span class="eyebrow">Tarif famille</span>
+          <h2>Calculez votre prix.</h2>
+          <p class="lead">Les remises s’appliquent automatiquement aux membres d’un même foyer.</p>
+          <ul class="checks">
+            <li><b>2e adulte</b> : CHF 79 au lieu de 119</li>
+            <li><b>Dès le 2e enfant</b> : CHF 49 au lieu de 69</li>
+            <li><b>Plafond famille</b> : jamais plus de <b>CHF 289 par mois</b> pour tout le foyer, quel que soit le nombre d’enfants</li>
+            <li><b>Même heure, deux étages</b> : le lundi et le jeudi à 17 h, parents et enfants s’entraînent en même temps</li>
+          </ul>
+          <div class="examples mt-2">
+            <div><span>1 parent + 1 enfant</span><b>CHF 188</b></div>
+            <div><span>2 parents + 1 enfant</span><b>CHF 267</b></div>
+            <div><span>2 parents + 2 enfants</span><b>CHF 289</b></div>
+            <div><span>2 parents + 3 enfants</span><b>CHF 289</b></div>
+          </div>
+        </div>
+
+        <div class="calc" id="calc">
+          <div class="calc-dur" role="group" aria-label="Durée de l’abonnement">
+            <button type="button" data-duree="annuel" aria-pressed="true">Annuel</button>
+            <button type="button" data-duree="semestre" aria-pressed="false">Semestre</button>
+          </div>
+          <div class="calc-row"><div><b>Adultes</b><small>dès 18 ans</small></div><div class="stepper"><button type="button" data-dec="adultes" aria-label="Retirer un adulte">−</button><span data-val="adultes">2</span><button type="button" data-inc="adultes" aria-label="Ajouter un adulte">+</button></div></div>
+          <div class="calc-row"><div><b>Enfants & ados</b><small>7 – 17 ans</small></div><div class="stepper"><button type="button" data-dec="enfants" aria-label="Retirer un enfant">−</button><span data-val="enfants">2</span><button type="button" data-inc="enfants" aria-label="Ajouter un enfant">+</button></div></div>
+          <div class="calc-row"><div><b>Mini</b><small>4 – 6 ans</small></div><div class="stepper"><button type="button" data-dec="mini" aria-label="Retirer un mini">−</button><span data-val="mini">0</span><button type="button" data-inc="mini" aria-label="Ajouter un mini">+</button></div></div>
+          <div class="calc-out" aria-live="polite"></div>
+          <a class="btn btn-pink calc-cta" href="inscription.html?pack=famille">Ce tarif m’intéresse <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTRES FORMULES -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Pour essayer ou venir autrement</span>
+      <h2>Sans engagement.</h2>
+      <div class="grid g4 mt-2">
+        <div class="card reveal"><span class="num">ESSAI</span><h3>1er cours offert</h3><p>Venez les mains vides : gants et protections sont fournis.</p></div>
+        <div class="card reveal"><span class="num">STARTER</span><h3>4 semaines · CHF 49</h3><p>Pour essayer vraiment, au rythme normal. Déduit si vous vous abonnez ensuite.</p></div>
+        <div class="card reveal"><span class="num">FLEXIBLE</span><h3>Carte 10 cours · CHF 250</h3><p>Pour les horaires irréguliers. Valable 6 mois, cours adultes et Samedi Open.</p></div>
+        <div class="card reveal"><span class="num">PRIVÉ</span><h3>Coaching dès CHF 90 / h</h3><p>Seul·e ou à deux (CHF 120 / h). Pour progresser vite ou préparer un combat.</p></div>
+      </div>
+      <div class="note mt-2"><b>Vous venez à deux ?</b> Deux ami·es qui s’abonnent ensemble paient chacun·e CHF 107 par mois au lieu de 119.</div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="section cream" id="conditions">
+    <div class="container">
+      <span class="eyebrow">Conditions</span>
+      <h2>Clair dès le départ.</h2>
+      <div class="facts mt-2" style="max-width:900px">
+        <div><span>Durée</span><b>Adultes : 12 mois (meilleur prix) ou 6 mois. Enfants : année scolaire (septembre à juin) ou semestre.</b></div>
+        <div><span>Paiement</span><b>Chaque mois par eBill ou recouvrement direct, ou en une fois. Les enfants ne paient pas en juillet et en août.</b></div>
+        <div><span>Inscription</span><b>Frais uniques de CHF 50 par foyer, offerts aux membres fondateurs.</b></div>
+        <div><span>Ensuite</span><b>Pas de reconduction automatique pour un an : à la fin de la période, l’abonnement continue de mois en mois, résiliable avec un mois de préavis.</b></div>
+        <div><span>Pause</span><b>Accident ou maladie de plus de 4 semaines (certificat), grossesse, service militaire : l’abonnement est suspendu et prolongé d’autant.</b></div>
+        <div><span>Sortie</span><b>Déménagement à plus de 25 km ou incapacité durable : résiliation anticipée sans frais.</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FONDATEURS -->
+  <section class="section dark">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Membres fondateurs</span>
+        <h2>Le club des <span class="accent">100 fondateurs.</span></h2>
+        <p class="lead">Les 100 premiers pré-inscrits qui s’abonnent à l’ouverture reçoivent :</p>
+        <ul class="checks">
+          <li><b>Vos gants offerts</b> : une paire aux couleurs de LAVAUX Academy, avec l’abonnement 12 mois</li>
+          <li><b>Votre prix bloqué</b> tant que vous restez membre, même si les tarifs augmentent</li>
+          <li><b>Zéro frais d’inscription</b> (CHF 50 économisés)</li>
+          <li><b>La soirée d’ouverture privée</b> et votre nom sur le mur des fondateurs</li>
+        </ul>
+        <a class="btn btn-pink mt-1" href="inscription.html">Je me pré-inscris <span class="arr">→</span></a>
+        <p class="small mt-1" style="color:var(--muted-l)">Pré-inscription gratuite et sans engagement. Valable si l’académie ouvre.</p>
+      </div>
+      <div class="photo tall reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1649888137201-491856105a1a?auto=format&fit=crop&w=900&q=70" alt="Une pratiquante frappe un sac en cuir"></div>
+    </div>
+  </section>
+
+  <section class="section cream">
+    <div class="container">
+      <span class="eyebrow">Questions</span>
+      <h2>Bon à savoir.</h2>
+      <div class="faq mt-2">
+        <details><summary>Pourquoi un engagement de 6 ou 12 mois ?</summary><p>C’est ce qui permet des prix bas et des coachs fixes. Et le Muay Thaï s’apprend dans la durée : les vrais progrès arrivent après quelques mois. Pour essayer d’abord, il y a le cours offert et le Starter 4 semaines.</p></details>
+        <details><summary>Et si je veux m’entraîner plus de 2 fois par semaine ?</summary><p>Le Samedi Open est déjà compris. Pour en faire plus, la carte 10 cours ou le coaching privé complètent l’abonnement.</p></details>
+        <details><summary>Comment marche le plafond famille ?</summary><p>On additionne les tarifs de votre foyer. Au-delà de CHF 289 par mois (CHF 329 au semestre), vous ne payez rien de plus. Une famille de 2 adultes et 3 enfants paie donc le même prix qu’une famille de 2 adultes et 2 enfants.</p></details>
+        <details><summary>Les tarifs sont-ils définitifs ?</summary><p>Non. Ils seront ajustés selon l’enquête et confirmés avant l’ouverture. Les membres fondateurs gardent leur prix tant qu’ils restent membres.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/calculateur.js"></script>
+</body>
+</html>

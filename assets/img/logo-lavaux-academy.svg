@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 96" role="img" aria-label="LAVAUX Academy">
+  <rect width="96" height="96" rx="20" fill="#0E1B3D"/>
+  <path d="M24 18h14v48h36v14H24z" fill="#F7F1E3"/>
+  <path d="M54 18h17L56 52H39z" fill="#FF3D8B"/>
+  <text x="118" y="56" font-family="Montserrat, Helvetica, Arial, sans-serif" font-weight="800" font-size="40" letter-spacing="6" fill="#0E1B3D">LAVAUX</text>
+  <text x="120" y="82" font-family="Montserrat, Helvetica, Arial, sans-serif" font-weight="600" font-size="14" letter-spacing="6.2" fill="#0E1B3D">ACADEMY · CULLY</text>
+</svg>
