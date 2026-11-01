@@ -23,8 +23,7 @@
     header.innerHTML =
       '<div class="container nav">' +
         '<a class="brand" href="index.html" aria-label="LAVAUX Academy — accueil">' +
-          '<img src="assets/img/logo-mark.svg" alt="" width="34" height="34">' +
-          '<span class="brand-txt"><b>LAVAUX</b><span>ACADEMY</span></span>' +
+          '<img src="assets/img/logo-lavaux-ivory.svg" alt="LAVAUX Academy" width="119" height="44">' +
         '</a>' +
         '<button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
         '<ul class="nav-links">' + nav +
@@ -45,7 +44,7 @@
       '<div class="container">' +
         '<div class="foot-grid">' +
           '<div>' +
-            '<a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="" width="34" height="34"><span class="brand-txt" style="color:#F7F1E3"><b>LAVAUX</b><span>ACADEMY</span></span></a>' +
+            '<a class="brand" href="index.html" aria-label="LAVAUX Academy — accueil"><img src="assets/img/logo-lavaux-ivory.svg" alt="LAVAUX Academy" width="152" height="56"></a>' +
             '<p class="motto">Le respect nous unit.<br><em>La discipline nous fait grandir.</em></p>' +
             '<p>Muay Thaï &amp; arts martiaux<br>Cully, Lavaux (VD)</p>' +
           '</div>' +
