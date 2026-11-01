@@ -25,6 +25,9 @@ Liens directs utiles : `inscription.html?interet=oui`, `inscription.html?pack=du
 5. **Tarif fondateur** (100 premiers, 12 mois, frais d’inscription offerts) : engagement commercial à valider.
 6. **Photos** : visuels Unsplash libres de droits, servis en taille moyenne (500–1400 px, qualité 60–70) directement depuis Unsplash. Les remplacer par des photos du lieu réel dès que possible.
 
+## Logo
+Logo v4 (01.11.2026) : `assets/img/logo-lavaux-ivory.svg` (en-tête et pied de page, fond sombre), `logo-lavaux-navy.svg` (fond clair), `logo-x.svg` (symbole seul), `favicon.svg`, `apple-touch-icon.png`. Sources et règles d'usage : `04_marque/logo-v4/` et `04_marque/charte-marque.md` du dossier projet.
+
 ## Tester en local
 ```bash
 cd 09_site-web && python3 -m http.server 8765
